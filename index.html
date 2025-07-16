@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Solar System Simulation</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="control-panel">
+    <button id="themeToggle">Toggle Theme</button>
+<div id="tooltip" style="position:absolute; color:white; background:rgba(0,0,0,0.6); padding:5px 10px; border-radius:4px; display:none; pointer-events:none;"></div>
+    <h2>Planet Speed Controls</h2>
+    <div id="sliders"></div>
+    <button id="toggleBtn">Pause</button>
+  </div>
+  <div id="container"></div>
+
+  
+<script src="https://unpkg.com/three@0.148.0/build/three.min.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>

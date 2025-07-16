@@ -1,0 +1,60 @@
+body {
+  margin: 0;
+  overflow: hidden;
+  background: #000;
+  font-family: Arial, sans-serif;
+  color: white;
+}
+
+#container {
+  width: 100vw;
+  height: 100vh;
+  display: block;
+}
+
+#control-panel {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: rgba(0,0,0,0.6);
+  padding: 10px;
+  border-radius: 8px;
+  z-index: 10;
+  max-height: 90vh;
+  overflow-y: auto;
+}
+
+#control-panel h2 {
+  margin-top: 0;
+}
+
+#control-panel input {
+  width: 100px;
+  margin-bottom: 8px;
+}
+body.light {
+  background: #f0f0f0;
+  color: black;
+}
+
+body.light #control-panel {
+  background: rgba(255,255,255,0.8);
+  color: black;
+}
+
+body.light #tooltip {
+  background: rgba(255,255,255,0.9);
+  color: black;
+}
+#tooltip {
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 14px;
+  white-space: nowrap;
+  user-select: none;
+  pointer-events: none;
+  display: none;
+  z-index: 1000;
+}
